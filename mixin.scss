@@ -4,3 +4,54 @@
     align-content: center;
     align-items: center;
 }
+
+@mixin containerTitle {
+    .container-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #555555;
+        margin-bottom: 30px;
+    }
+}
+
+@mixin containerDashes {
+    .container-dashes {
+        display: grid;
+        border-bottom: 2px solid #555555;
+        width: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@mixin containerText {
+    .container-text {
+        font-size: 16px;
+        color: #555555;
+        margin-bottom: 70px;
+    }
+}
+
+@mixin serviceItem {
+    margin: 0px 15px 100px 15px;
+
+    .service-item-img {
+        display: grid;
+        grid-template-columns: 90px;
+        grid-template-rows: 90px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+    }
+
+    .service-item-title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .service-item-description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

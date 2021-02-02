@@ -171,7 +171,7 @@ body {
     background-size: cover;
     background-position: center;
     margin-top: -60px;
-    @media (max-width: 425px) {
+    @media (max-width: 765px) {
         grid-template-rows: 450px;
     }
 
@@ -226,22 +226,39 @@ body {
     @include fullAlign;
     margin-top: 100px;
 
-    .services-title {
-        font-size: 20px;
-        color: #555555;
-        margin-bottom: 30px;
-    }
-    
-    .services-dashes {
-        display: grid;
-        border-bottom: 2px solid #555555;
-        width: 50px;
-        margin-bottom: 30px;
-    }
+    @include containerTitle;
+    @include containerDashes;    
+    @include containerText;
 
-    .services-text {
-        font-size: 16px;
-        color: #555555;
-        margin-bottom: 70px;
+    .services-items-container {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        @include fullAlign;
+        @media (max-width: 765px) {
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+        }
+        
+        .service-item {
+            color: #555555;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto;
+            @include serviceItem;
+            @include fullAlign;
+        }
+
+        .s-i-i-1 {
+            background-image: url(images/ser-it-img-1.png);
+        }
+
+        .s-i-i-2 {
+            background-image: url(images/ser-it-img-2.png);
+        }
+
+        .s-i-i-3 {
+            background-image: url(images/ser-it-img-3.png);
+        }
     }
 }
