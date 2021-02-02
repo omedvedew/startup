@@ -20,6 +20,11 @@ body {
 .header .logo {
   font-size: 24px;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.header .logo:hover {
+  color: #c0301c;
 }
 .header .menu {
   display: grid;
@@ -211,6 +216,9 @@ body {
   border-radius: 1px;
   background-color: transparent;
   color: white;
+}
+.cover-container .cover-overlay .get-started-btn:focus {
+  outline: none;
 }
 .cover-container .cover-overlay .get-started-btn:hover {
   cursor: pointer;
