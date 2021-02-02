@@ -285,3 +285,42 @@ body {
         }
     }
 }
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto auto auto auto;
+    @include fullAlign;
+    margin-top: 100px;
+    @media (max-width: 765px) {
+        margin-top: 0;
+    }
+
+    @include containerTitle;
+    @include containerDashes;    
+    @include containerText;
+
+    .container-additional-text {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 70px;
+        @media (max-width: 765px) {
+            grid-template-rows: auto auto;
+            grid-template-columns: 90%;
+        }
+
+        p {
+            margin: 0px 15px 0px 15px;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+
+    .about-us-slider-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px; 
+    }
+}
