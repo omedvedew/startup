@@ -373,6 +373,8 @@ body {
 }
 .about-us-container .about-us-slider-container .slick-arrow {
   z-index: 10;
+  width: 30px;
+  height: 30px;
 }
 .about-us-container .about-us-slider-container .slick-arrow::before {
   font-size: 30px;
