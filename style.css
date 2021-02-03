@@ -842,4 +842,49 @@ body {
   cursor: pointer;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #c0301c;
+}
+.footer .container-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.footer .container-dashes {
+  display: grid;
+  border-bottom: 2px solid #555555;
+  width: 50px;
+  margin-bottom: 30px;
+}
+.footer .container-text {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.footer .footer-social-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px;
+  grid-template-rows: 30px;
+  justify-content: center;
+  align-content: center;
+}
+.footer .footer-dashes {
+  border-bottom: 2px solid white;
+}
+.footer .footer-text {
+  font-size: 12px;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
