@@ -218,6 +218,7 @@ body {
   justify-content: center;
   align-content: center;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
   border: 2px solid white;
   border-radius: 1px;
   background-color: transparent;
@@ -373,6 +374,7 @@ body {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .about-us-container .about-us-slider-container .slick-arrow {
   z-index: 10;
@@ -479,6 +481,228 @@ body {
 }
 .about-us-container .about-us-slider-container .slider-person .s-p-s-b-4 {
   background-image: url(images/linkedin-logo.png);
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+@media (max-width: 765px) {
+  .works-container {
+    margin-top: 0;
+  }
+}
+.works-container .container-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.works-container .container-dashes {
+  display: grid;
+  border-bottom: 2px solid #555555;
+  width: 50px;
+  margin-bottom: 30px;
+}
+.works-container .container-text {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.works-container .container-text {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto;
+  font-weight: bold;
+}
+@media (max-width: 550px) {
+  .works-container .container-text {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    margin-bottom: 25px;
+  }
+  .works-container .container-text p {
+    margin: 5px 0 5px 0;
+  }
+}
+.works-container .container-text .works-category-active {
+  color: #c0301c;
+}
+.works-container .container-text p {
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all 0.3s;
+}
+.works-container .container-text p:hover {
+  cursor: pointer;
+  color: #c0301c;
+  transition: all 0.3s;
+}
+.works-container .works-items-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto;
+  margin-bottom: 100px;
+}
+@media (max-width: 900px) {
+  .works-container .works-items-container {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 500px) {
+  .works-container .works-items-container {
+    grid-template-columns: 100%;
+  }
+}
+.works-container .works-items-container .works-item {
+  display: grid;
+  padding-top: 80%;
+  position: relative;
+  margin: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.works-container .works-items-container .works-item .works-item-overlay {
+  opacity: 0;
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(192, 48, 28, 0.8);
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.works-container .works-items-container .works-item .works-item-overlay .works-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.works-container .works-items-container .works-item .works-item-overlay .works-item-category-text {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.works-container .works-items-container .works-item .works-item-overlay .works-item-btn {
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.works-container .works-items-container .works-item .works-item-overlay .works-item-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #c0301c;
+  transition: all 0.3s ease-in-out;
+}
+.works-container .works-items-container .works-item .works-item-overlay .works-item-btn:focus {
+  outline: none;
+}
+.works-container .works-items-container .works-item:hover .works-item-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.works-container .works-items-container .w-i-1 {
+  background-image: url(images/w-i-1.png);
+}
+.works-container .works-items-container .w-i-2 {
+  background-image: url(images/w-i-2.png);
+}
+.works-container .works-items-container .w-i-3 {
+  background-image: url(images/w-i-3.png);
+}
+.works-container .works-items-container .w-i-4 {
+  background-image: url(images/w-i-4.png);
+}
+.works-container .works-items-container .w-i-5 {
+  background-image: url(images/w-i-5.png);
+}
+.works-container .works-items-container .w-i-6 {
+  background-image: url(images/w-i-6.png);
+}
+.works-container .works-items-container .w-i-7 {
+  background-image: url(images/w-i-7.png);
+}
+.works-container .works-items-container .w-i-8 {
+  background-image: url(images/w-i-8.png);
+}
+.works-container .works-items-container .w-i-9 {
+  background-image: url(images/w-i-9.png);
+}
+
+.works-feedback-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  background-image: url(images/feedback-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.works-feedback-container .works-feedback-overlay {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(192, 48, 28, 0.8);
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-title {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-title:nth-child(1) {
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-title:nth-child(2) {
+  margin-bottom: 50px;
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-btn {
+  margin-bottom: 98px;
+  width: 190px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #c0301c;
+  transition: all 0.3s ease-in-out;
+}
+.works-feedback-container .works-feedback-overlay .works-feedback-btn:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
