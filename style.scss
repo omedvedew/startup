@@ -24,10 +24,12 @@ body {
         font-weight: bold;
         color: white;
         text-decoration: none;
+        transition: all 0.3s ease-in-out;
     }
 
     .logo:hover {
         color: #c0301c;
+        transition: all 0.3s ease-in-out;
     }
 
     .menu {
@@ -48,12 +50,14 @@ body {
             @include fullAlign;
             width: 100%;
             height: 100%;
+            transition: all 0.3s ease-in-out;
         }
 
         a:hover {
             text-decoration: underline;
             text-underline-offset: 1px;
             background-color: #c0301c;
+            transition: all 0.3s ease-in-out;
         }
     }
 
@@ -163,12 +167,14 @@ body {
                     @include fullAlign;
                     width: 100%;
                     height: 100%;
+                    transition: all 0.3s ease-in-out;
                 }
 
                 a:hover {
                     text-decoration: underline;
                     text-underline-offset: 1px;
                     background-color: #c0301c;
+                    transition: all 0.3s ease-in-out;
                 }
             }
 
@@ -228,6 +234,7 @@ body {
             border-radius: 1px;
             background-color: transparent;
             color: white;
+            transition: all 0.3s ease-in-out;
         }
 
         .get-started-btn:focus {
@@ -238,6 +245,7 @@ body {
             cursor: pointer;
             background-color: #fff;
             color: #c0301c;
+            transition: all 0.3s ease-in-out;
         }
     }
 }
@@ -320,7 +328,69 @@ body {
 
     .about-us-slider-container {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px; 
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        justify-content: center;
+
+        .slick-arrow {
+            z-index: 10;
+        }
+        .slick-arrow::before {
+            font-size: 30px;
+            opacity: 1;
+            color: rgba(0, 0, 0, 0.45);
+            transition: all 0.3s;
+        }
+        .slick-arrow:hover:before {
+            color: #c0301c;
+            transition: all 0.3s;
+        }
+        .slick-next {
+            right: 15px;
+        }
+        .slick-prev {
+            left: 5px;
+        }
+        .slick-slide:focus {
+            outline: none;
+        }
+
+        .slider-person {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 250px auto auto;
+            justify-items: center;
+            margin: 0px 2px 15px 2px;
+            @include sliderPerson;
+
+            .s-p-i-1 {
+                background-image: url(images/person-1.png);
+            }
+            .s-p-i-2 {
+                background-image: url(images/person-2.png);
+            }
+            .s-p-i-3 {
+                background-image: url(images/person-3.png);
+            }
+            .s-p-i-4 {
+                background-image: url(images/person-4.png);
+            }
+            .s-p-i-5 {
+                background-image: url(images/person-5.png);
+            }
+
+            .s-p-s-b-1 {
+                background-image: url(images/Facebook-Logo.png);
+            }
+            .s-p-s-b-2 {
+                background-image: url(images/Twitter-logo.png);
+            }
+            .s-p-s-b-3 {
+                background-image: url(images/Google-Plus-Logo.png);
+            }
+            .s-p-s-b-4 {
+                background-image: url(images/linkedin-logo.png);
+            }
+        }
     }
 }

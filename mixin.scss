@@ -57,3 +57,63 @@
         text-align: center;
     }
 }
+
+@mixin sliderPerson {
+    .slider-person-image {
+        display: grid;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // @media (max-width: 1024px) {
+        //     width: 100%;
+        // }
+
+        .slider-item-img-overlay {
+            display: grid;
+            opacity: 0;
+            visibility: hidden;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            justify-content: center;
+            align-items: end;
+            transition: all 0.5s ease-in-out;
+
+            .slider-person-social-btn {
+                display: grid;
+                width: 30px;
+                height: 30px;
+                margin: 0px 5px 35px 5px;
+                background-color: transparent;
+                border: none;
+                background-position: center;
+                background-size: initial;
+                background-repeat: no-repeat;
+                transition: all 0.5s ease-in-out;
+            }
+            .slider-person-social-btn:hover {
+                background-color: #c0301c;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+    .slider-person-image:hover .slider-item-img-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .slider-person-name {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #555555;
+    }
+
+    .slider-person-position {
+        margin-top: 15px;
+        font-size: 13px;
+        color: #555555;
+    }
+}
