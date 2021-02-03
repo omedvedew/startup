@@ -604,3 +604,133 @@ body {
         }
     }
 }
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto auto auto auto;
+    @include fullAlign;
+    margin-top: 100px;
+
+    @include containerTitle;
+    @include containerDashes;    
+    @include containerText;
+
+    .blog-items-container {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+
+        .blog-item {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: auto;
+            margin-bottom: 80px;
+            @media (max-width: 765px) {
+                grid-template-columns: 100%;
+                grid-template-rows: auto auto;
+                @include fullAlign;
+                .blog-item-img {
+                    margin-bottom: 15px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .blog-item-img {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 100%;
+                margin-right: 15px;
+                margin-left: 15px;
+    
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .blog-item-description {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto auto auto;
+                margin-left: 15px;
+                margin-right: 15px;
+
+                .blog-item-title-row {
+                    display: grid;
+                    grid-template-columns: 75px auto;
+                    grid-template-rows: 75px;
+                    margin-bottom: 25px;
+
+                    .blog-item-date {
+                        display: grid;
+                        border: 2px solid #555555;
+                        color: #555555;
+                        @include fullAlign;
+                        font-weight: bold;
+
+                        .blog-item-day {
+                            font-size: 24px;
+                        }
+                        .blog-item-month {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .blog-item-title-container {
+                        display: grid;
+                        margin-left: 30px;
+                        grid-template-rows: auto auto;
+                        grid-template-columns: auto;
+                        align-items: center;
+                        color: #555555;
+
+                        .blog-item-title {
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        .blog-item-title:hover {
+                            color: #c0301c;
+                            cursor: pointer;
+                        }
+
+                        .blog-item-title-description {
+                            font-size: 13px;
+                            font-style: italic;
+                            font-weight: bold;
+
+                            .blog-item-author:hover {
+                                cursor: pointer;
+                                color: #c0301c;
+                            }
+                            .blog-item-category:hover {
+                                cursor: pointer;
+                                color: #c0301c;
+                            }
+                        }
+                    }
+                }
+
+                .blog-item-text {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #555555;
+                    margin-bottom: 15px;
+                }
+
+                .blog-item-btn {
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: #555555;
+                }
+                .blog-item-btn:hover {
+                    color: #c0301c;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

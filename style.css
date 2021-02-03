@@ -705,4 +705,144 @@ body {
   outline: none;
 }
 
+.blog-container {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.blog-container .container-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.blog-container .container-dashes {
+  display: grid;
+  border-bottom: 2px solid #555555;
+  width: 50px;
+  margin-bottom: 30px;
+}
+.blog-container .container-text {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.blog-container .blog-items-container {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.blog-container .blog-items-container .blog-item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+  margin-bottom: 80px;
+}
+@media (max-width: 765px) {
+  .blog-container .blog-items-container .blog-item {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+  .blog-container .blog-items-container .blog-item .blog-item-img {
+    margin-bottom: 15px;
+  }
+  .blog-container .blog-items-container .blog-item .blog-item-img img {
+    width: 100%;
+  }
+}
+.blog-container .blog-items-container .blog-item .blog-item-img {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-img img {
+  max-width: 100%;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row {
+  display: grid;
+  grid-template-columns: 75px auto;
+  grid-template-rows: 75px;
+  margin-bottom: 25px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-date {
+  display: grid;
+  border: 2px solid #555555;
+  color: #555555;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-date .blog-item-day {
+  font-size: 24px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-date .blog-item-month {
+  font-size: 14px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container {
+  display: grid;
+  margin-left: 30px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  align-items: center;
+  color: #555555;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container .blog-item-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container .blog-item-title:hover {
+  color: #c0301c;
+  cursor: pointer;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container .blog-item-title-description {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: bold;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container .blog-item-title-description .blog-item-author:hover {
+  cursor: pointer;
+  color: #c0301c;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-title-row .blog-item-title-container .blog-item-title-description .blog-item-category:hover {
+  cursor: pointer;
+  color: #c0301c;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #555555;
+  margin-bottom: 15px;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555555;
+}
+.blog-container .blog-items-container .blog-item .blog-item-description .blog-item-btn:hover {
+  color: #c0301c;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
