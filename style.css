@@ -833,6 +833,9 @@ body {
   margin-bottom: 15px;
 }
 .blog-container .blog-items-container .blog-item .blog-item-description .blog-item-btn {
+  display: grid;
+  width: fit-content;
+  height: fit-content;
   font-size: 13px;
   font-weight: bold;
   color: #555555;
@@ -862,6 +865,12 @@ body {
   align-items: center;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+@media (max-width: 800px) {
+  .clients-container .clients-items-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }
 .clients-container .clients-items-container .clients-item {
   display: grid;
@@ -902,6 +911,191 @@ body {
   color: #555555;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+  color: #555555;
+}
+.contacts-container .container-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  margin-bottom: 30px;
+}
+.contacts-container .container-dashes {
+  display: grid;
+  border-bottom: 2px solid #555555;
+  width: 50px;
+  margin-bottom: 30px;
+}
+.contacts-container .container-text {
+  font-size: 16px;
+  color: #555555;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.contacts-container .contacts-items-container {
+  display: grid;
+  grid-template-columns: 33.3% 66.6%;
+  grid-template-rows: auto;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .contacts-container .contacts-items-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+.contacts-container .contacts-items-container .contacts-contacts {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+@media (max-width: 765px) {
+  .contacts-container .contacts-items-container .contacts-contacts {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item {
+  display: grid;
+  grid-template-columns: 25px auto;
+  grid-template-rows: auto;
+  margin-bottom: 30px;
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .contacts-item-icon {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .c-i-i-1 {
+  background-image: url(images/fa-map-marker.png);
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .c-i-i-2 {
+  background-image: url(images/fa-mobile-phone.png);
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .c-i-i-3 {
+  background-image: url(images/fa-envelope-o.png);
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .contacts-item-description {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  margin-left: 15px;
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .contacts-item-description .contacts-item-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .contacts-item-description .contacts-item-text a {
+  line-height: 20px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #555555;
+}
+.contacts-container .contacts-items-container .contacts-contacts .contacts-item .contacts-item-description .contacts-item-text a:hover {
+  color: #c0301c;
+}
+.contacts-container .contacts-items-container .contacts-form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+@media (max-width: 765px) {
+  .contacts-container .contacts-items-container .contacts-form {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+.contacts-container .contacts-items-container .contacts-form .form-contacts-input {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+@media (max-width: 765px) {
+  .contacts-container .contacts-items-container .contacts-form .form-contacts-input {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+.contacts-container .contacts-items-container .contacts-form .form-contacts-input input {
+  height: 45px;
+  margin: 15px;
+  font-size: 12px;
+  color: #555555;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 15px;
+  border: 1px solid #555555;
+}
+.contacts-container .contacts-items-container .contacts-form .form-contacts-input input:focus {
+  outline: none;
+  border: 1px solid #c0301c;
+}
+.contacts-container .contacts-items-container .contacts-form .form-message-input {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.contacts-container .contacts-items-container .contacts-form .form-message-input textarea {
+  height: 100px;
+  margin: 15px;
+  font-size: 12px;
+  color: #555555;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 15px;
+  padding-top: 15px;
+  border: 1px solid #555555;
+}
+.contacts-container .contacts-items-container .contacts-form .form-message-input textarea:focus {
+  outline: none;
+  border: 1px solid #c0301c;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit .form-submit-btn {
+  display: grid;
+  height: 45px;
+  margin: 15px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #555555;
+  background-color: transparent;
+  color: #555555;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit .form-submit-btn:hover {
+  cursor: pointer;
+  border: 1px solid #c0301c;
+  color: #c0301c;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit .form-submit-btn:focus {
+  outline: none;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit .form-submit-text {
+  font-size: 12px;
+  margin: 15px;
+  color: #555555;
+}
+.contacts-container .contacts-items-container .contacts-form .form-submit .form-submit-text span {
+  color: #c0301c;
 }
 
 .footer {
