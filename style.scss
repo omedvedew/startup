@@ -734,6 +734,70 @@ body {
     }
 }
 
+.clients-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    background-color: #f8f8f8;
+    @include fullAlign;
+
+    .clients-items-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+        @include fullAlign;
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        .clients-item {
+            display: grid;
+            width: 160px;
+            height: 70px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0px 15px 0px 15px;
+        }
+        .c-i-1 {
+            background-image: url(images/clients-1.png);
+        }
+        .c-i-2 {
+            background-image: url(images/clients-2.png);
+        }
+        .c-i-3 {
+            background-image: url(images/clients-3.png);
+        }
+        .c-i-4 {
+            background-image: url(images/clients-4.png);
+        }
+        .c-i-5 {
+            background-image: url(images/clients-5.png);
+        }
+        
+        
+    }
+
+    .clients-quotation {
+        display: grid;
+        max-width: 810px;
+        font-size: 18px;
+        line-height: 30px;
+        font-style: italic;
+        color: #555555;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    .clients-quotation-author {
+        font-size: 18px;
+        color: #555555;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+
+}
+
 .footer {
     display: grid;
     grid-template-columns: 100%;
@@ -749,10 +813,44 @@ body {
     .footer-social-container {
         margin-top: 100px;
         display: grid;
-        grid-template-columns: 30px 30px 30px 30px;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: 30px;
-        justify-content: center;
+        justify-items: center;
         align-content: center;
+        margin-bottom: 30px;
+
+        .footer-social-btn {
+            display: grid;
+            width: 30px;
+            height: 30px;
+            margin: 0px 5px 0px 5px;
+            background-color: transparent;
+            border: none;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all 0.5s ease-in-out;
+        }
+        .f-s-b-1 {
+            background-image: url(images/footer-facebook.png);
+        }
+        .f-s-b-2 {
+            background-image: url(images/footer-tweeter.png);
+        }
+        .f-s-b-3 {
+            background-image: url(images/footer-linked-in.png);
+        }
+        .f-s-b-4 {
+            background-image: url(images/footer-google-plus.png);
+        }
+        .footer-social-btn:hover {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+        .footer-social-btn:focus {
+            outline: none;
+        }
     }
 
     .footer-dashes {
