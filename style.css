@@ -420,6 +420,12 @@ body {
   align-items: end;
   transition: all 0.5s ease-in-out;
 }
+@media (max-width: 1023px) {
+  .about-us-container .about-us-slider-container .slider-person .slider-person-image .slider-item-img-overlay {
+    opacity: 0.7;
+    visibility: visible;
+  }
+}
 .about-us-container .about-us-slider-container .slider-person .slider-person-image .slider-item-img-overlay .slider-person-social-btn {
   display: grid;
   width: 30px;
@@ -584,6 +590,12 @@ body {
   background-color: rgba(192, 48, 28, 0.8);
   color: white;
   transition: all 0.5s ease-in-out;
+}
+@media (max-width: 1023px) {
+  .works-container .works-items-container .works-item .works-item-overlay {
+    opacity: 0.7;
+    visibility: visible;
+  }
 }
 .works-container .works-items-container .works-item .works-item-overlay .works-item-title {
   font-size: 18px;
@@ -866,7 +878,7 @@ body {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-@media (max-width: 800px) {
+@media (max-width: 970px) {
   .clients-container .clients-items-container {
     grid-template-columns: auto;
     grid-template-rows: auto;
