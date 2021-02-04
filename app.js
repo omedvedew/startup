@@ -15,6 +15,10 @@ $(document).ready(function(){
     $('.about-us-slider-container').slick({
     //   setting-name: setting-value
         infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnFocus: true,
+        pauseOnDotsHover: true,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -47,7 +51,21 @@ $(document).ready(function(){
     });
   });
 
-
+// QUOTATIONS SLIDER SCRIPT
+$(document).ready(function(){
+  $('.clients-quotations-slider').slick({
+  //   setting-name: setting-value
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnFocus: true,
+      pauseOnDotsHover: true
+  });
+});
 
 
 
