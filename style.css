@@ -922,6 +922,11 @@ body {
   justify-items: center;
   margin: 0px 2px 75px 2px;
 }
+@media (max-width: 875px) {
+  .clients-container .clients-quotations-slider .quotation-slide {
+    margin-bottom: 55px;
+  }
+}
 .clients-container .clients-quotations-slider .quotation-slide:focus {
   outline: none;
 }

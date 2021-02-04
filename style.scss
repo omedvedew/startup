@@ -801,6 +801,9 @@ body {
             grid-template-rows: auto auto;
             justify-items: center;
             margin: 0px 2px 75px 2px;
+            @media (max-width: 875px) {
+                margin-bottom: 55px;
+            }
         }
         .quotation-slide:focus {
             outline: none;
